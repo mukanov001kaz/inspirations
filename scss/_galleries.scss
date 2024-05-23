@@ -30,14 +30,14 @@
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         &::-webkit-scrollbar {
-            display: none;
+            scrollbar-width: none;
         }
     }
+
     &__view-item {
         width: clamp(15.63rem, calc(13.98rem + 8.21vw), 21.38rem);
         flex-shrink: 0;
         scroll-snap-align: start;
-
         @media (max-width: 768px) {
             scroll-snap-align: center;
         }
